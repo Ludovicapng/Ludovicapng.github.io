@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Montserrat:wght@100&family=Outfit:wght@300&display=swap');
+
+.circular-image {
+    position: fixed;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgb(255, 164, 164);
+    width: 200px; /* Imposta la larghezza desiderata */
+    height: 200px; /* Imposta l'altezza desiderata */
+    transition: all 0.3s ease; /* Aggiungi una transizione fluida */
+  }
+  
+  .circular-image:hover {
+    transform: translate(-50%, -50%) scale(1.2); /* Ingrandisci l'immagine al passaggio del mouse */
+  }
+
+  @media screen and (max-width: 700px) {
+    .circular-image {
+      display: none; /* Nascondi la circular image quando la finestra è troppo piccola */
+    }
+  }
+  
+  .presentation-box {
+    width: 80%;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: transparent;
+    text-align: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+
+  .presentation-box:hover {
+    opacity: 1; /* Aggiunto */
+  }
+
+  .presentation-box h2 {
+    font-family: 'Outfit', monospace;
+    font-size: 40px;
+    font-weight: bold;
+    color: #333333;
+    margin-bottom: 30px; /* Aggiungi un valore negativo per spostarlo più in alto */
+  }
+  
+  .presentation-box p {
+    font-family: 'Inconsolata', monospace;
+    font-size: 20px;
+    color: #800048;
+  }
+
+  
+  .background-panel {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 80%;
+    width: 40%;
+    background: linear-gradient(to bottom, #ebff6b, #ff9090);
+    box-shadow: 0 0 10px rgb(32, 32, 32);
+    border-radius: 50px;
+    z-index: -1;
+  }
+  

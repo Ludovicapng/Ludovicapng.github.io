@@ -1,0 +1,47 @@
+<div class="background-panel"></div>
+
+<div class="projectspresentation">
+  <h1>My Projects</h1>
+</div>
+
+<div class="container">
+    <div class="card flex justify-content-center" *ngFor="let progetto of progetti" >
+      <p-card
+        header="{{progetto.header}}"
+        subheader="{{progetto.subheader}}"
+        [style]="{ width: '360px' }"
+      >
+        <ng-template pTemplate="header">
+          <img
+            alt="Card"
+            src="{{progetto.imgUrl}}"
+          />
+        </ng-template>
+        <p>
+          {{progetto.description}}
+        </p>
+        <ng-template pTemplate="footer">
+          <p-button
+            label="{{progetto.buttonLabel}}"
+            icon="{{progetto.icon}}"
+            (onClick)="
+              handleClick(
+                $event,
+                progetto.redirectUrl
+              )
+            "
+          ></p-button>
+        </ng-template>
+      </p-card>
+    </div>
+  </div>
+
+  <div class="home-button">
+    <p-button
+      icon="pi pi-angle-left"
+      (click)="redirect('/')"
+      styleClass="p-button-rounded p-button-text p-ripple"
+    ></p-button>
+  </div>
+
+  <app-social></app-social>

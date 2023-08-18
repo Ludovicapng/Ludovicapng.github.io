@@ -1,0 +1,48 @@
+@import "primeng/resources/themes/fluent-light/theme.css";
+@import "primeng/resources/primeng.css";
+@import "primeicons/primeicons.css";
+
+button .p-button-label {
+  opacity: 0.5;
+  color: black;
+  font-size: 15px;
+}
+
+button .p-button-icon {
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+}
+
+.button-container {
+  position: fixed;
+  bottom: 20%;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.social-buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.p-button {
+  border-radius: 30px;
+  background-color: transparent;
+  padding: 5px;
+  width: 37px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 5px 10px rgb(255, 196, 168);
+  outline: none;
+  transition: background-color 0.3s;
+  transition: all 0.3s ease; /* Aggiungi una transizione fluida */
+}
+
+.p-button:hover {
+  background-color: #ffffff4f !important;
+  transform: scale(1.2); /* Ingrandisci l'immagine al passaggio del mouse */
+}

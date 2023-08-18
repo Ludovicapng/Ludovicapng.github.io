@@ -1,0 +1,11 @@
+<div class="button-container">
+  <div class="social-buttons">
+    <ng-container *ngFor="let bottone of bottoni">
+      <p-button
+        icon="{{ bottone.icon }}"
+        (onClick)="handleClick($event, bottone.redirectUrl)"
+        styleClass="{{ bottone.style }}"
+      ></p-button>
+    </ng-container>
+  </div>
+</div>

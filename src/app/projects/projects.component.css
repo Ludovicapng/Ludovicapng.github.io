@@ -1,0 +1,39 @@
+@import "primeng/resources/themes/fluent-light/theme.css";
+@import "primeng/resources/primeng.css";
+@import "primeicons/primeicons.css";
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata&family=Montserrat:wght@100&family=Outfit:wght@300&display=swap");
+
+.projects-button {
+  position: fixed;
+  bottom: 28%; /* Imposta la distanza dal bordo inferiore della pagina */
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+}
+
+.projects-button .card .pjcontainer .p-button {
+  border-radius: 30px;
+  background-color: transparent;
+  padding: 5px;
+  width: 190px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 5px 10px rgb(255, 196, 168);
+  outline: none;
+  transition: background-color 0.3s;
+  transition: all 0.3s ease; /* Aggiungi una transizione fluida */
+}
+
+.projects-button .card .pjcontainer .p-button:hover {
+  background-color: #fffbfb4f !important;
+  transform: scale(1.2); /* Ingrandisci l'immagine al passaggio del mouse */
+}
+
+.projects-button .card .pjcontainer .p-button .p-button-label {
+  font-family: "Inconsolata", monospace;
+  color: #000000;
+  font-size: 30px;
+}

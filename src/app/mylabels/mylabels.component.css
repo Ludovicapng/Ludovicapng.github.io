@@ -1,0 +1,14 @@
+.mylabels {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center; /* Centra gli elementi orizzontalmente */
+    align-items: center; /* Centra gli elementi verticalmente */
+    margin-top: 15px;
+  }
+  
+  .mylabels p-chip {
+    margin-bottom: 10px;
+    box-shadow: 0 0 20px rgb(255, 184, 184);
+  }
+  
